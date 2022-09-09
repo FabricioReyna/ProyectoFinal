@@ -2,11 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
+
+.GridPadre {
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer"; }
 
 .Inicio-Bg {
-  display: grid;
-  grid-template-areas: "header header" "main main" "footer footer";
   background-image: url(../img/bg-inicio-cuervos.jpg);
   background-position: center;
   background-size: cover;
@@ -52,15 +54,15 @@ footer {
 .nav-head ul li a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #02111B;
+  color: #02111b;
   font-weight: bold;
   padding: 10px; }
 
 .nav-head ul li a:hover {
   text-transform: uppercase;
   text-decoration: none;
-  color: #02111B;
-  background: #E6FAFC;
+  color: #02111b;
+  background: #e6fafc;
   font-weight: bold;
   transition: 2s;
   border-radius: 25%; }
@@ -68,39 +70,147 @@ footer {
 .inicio-cuervos {
   height: 67vh;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 .inicio-cuervos h1 {
   justify-content: start;
   align-items: center;
   font-size: 6em;
-  color: #02111B;
+  color: #02111b;
   font-weight: bold;
   text-transform: uppercase; }
 
+.botones {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; }
+  .botones .boton-inicio {
+    padding: 50px 70px;
+    border-radius: 50%;
+    background: #e6fafc;
+    color: #02111b;
+    font-weight: bold;
+    opacity: 0.9;
+    border: none; }
+  .botones .boton-inicio:hover {
+    opacity: none;
+    background: #02111b;
+    color: #e6fafc;
+    transition: 1s;
+    transform: scale(1.2); }
+
 /* Contacto */
-.inicio-cuervos .titulo-contacto {
-  font-size: 2em; }
+.contacto-cuervos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; }
+  .contacto-cuervos .titulo-contacto {
+    font-size: 3em;
+    text-align: center; }
 
 .contact {
+  width: 30%;
+  text-align: center;
+  background: #e6fafc;
+  margin: 40px;
+  padding: 70px;
   border: 1px solid black;
-  background: #E6FAFC;
-  width: 50%;
-  padding: 30px 0px; }
+  border-radius: 10%; }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .form-control {
   background: transparent;
-  color: #02111B;
+  color: #02111b;
   font-weight: bold;
-  border: 2px solid #02111B;
-  margin-left: 20%;
-  width: 60%;
-  text-align: left; }
+  border: 2px solid #02111b;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .boton {
   padding: 10px 20px;
   border-radius: 10px;
   background: transparent; }
+
+.boton:hover {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #02111b;
+  color: #fff; }
+
+.Quien-Bg {
+  background: #e6fafc;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.nav-head-quien {
+  background: #02111b;
+  align-self: start; }
+  .nav-head-quien ul li a {
+    color: #e6fafc; }
+  .nav-head-quien ul li a:hover {
+    background: #e6fafc;
+    color: #02111b; }
+
+.Quien-cuervos {
+  height: 67vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .Quien-cuervos h1 {
+    text-align: center;
+    font-size: 6em;
+    color: #02111b;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .Quien-cuervos .contenido {
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    background: #e6fafc; }
+    .Quien-cuervos .contenido p {
+      font-size: 1.5em; }
+      .Quien-cuervos .contenido p b {
+        text-transform: uppercase; }
+      .Quien-cuervos .contenido p a {
+        color: #02111b;
+        text-decoration: none;
+        font-weight: bold; }
+  .Quien-cuervos .quien-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%; }
+    .Quien-cuervos .quien-img p img {
+      width: 200px;
+      height: 250px;
+      margin-bottom: 10px; }
+    .Quien-cuervos .quien-img p b {
+      padding: 10px;
+      background: #3b5998;
+      color: #02111b;
+      cursor: pointer; }
+    .Quien-cuervos .quien-img p b:hover {
+      background: #02111b;
+      color: #e6fafc;
+      transition: 1s; }
 
 .inicio-footer {
   position: fixed;
@@ -111,18 +221,34 @@ footer {
   cursor: pointer; }
 
 .inicio-footer i {
-  background: #E6FAFC;
+  background: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
   padding-top: 4px; }
 
+.inicio-footer i:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: 2s; }
+
 .inicio-footer i:nth-child(1) {
-  color: #51CB20; }
+  color: #51cb20; }
+
+.inicio-footer i:nth-child(1):hover {
+  color: #fff;
+  background: #51cb20; }
 
 .inicio-footer i:nth-child(2) {
-  color: #2708A0; }
+  color: #3b5998; }
+
+.inicio-footer i:nth-child(2):hover {
+  color: #fff;
+  background: #3b5998; }
 
 .inicio-footer i:nth-child(3) {
-  color: #34E4EA; }
+  color: #34e4ea; }
+
+.inicio-footer i:nth-child(3):hover {
+  color: #fff;
+  background: #34e4ea; }

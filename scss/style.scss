@@ -1,140 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-.Inicio-Bg{
-    display: grid;
-    grid-template-areas: 
+.GridPadre {
+  display: grid;
+  grid-template-areas:
     "header header"
     "main main"
     "footer footer";
-    background-image: url(../img/bg-inicio-cuervos.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+.Inicio-Bg {
+  background-image: url(../img/bg-inicio-cuervos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+/* Inicio */
+.nav {
+  width: 100%;
+}
+.nav-head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.nav-head img {
+  width: 190px;
+  height: 150px;
+  padding-left: 20%;
+}
+.nav-head ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.nav-head ul li {
+  list-style: none;
+  padding: 0 20px 0 20px;
+}
+.nav-head ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #02111b;
+  font-weight: bold;
+  padding: 10px;
+}
+.nav-head ul li a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #02111b;
+  background: #e6fafc;
+  font-weight: bold;
+  transition: 2s;
+  border-radius: 25%;
+}
+.inicio-cuervos {
+  height: 67vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inicio-cuervos h1 {
+  justify-content: start;
+  align-items: center;
+  font-size: 6em;
+  color: #02111b;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.botones {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  .boton-inicio {
+    padding: 50px 70px;
+    border-radius: 50%;
+    background: #e6fafc;
+    color: #02111b;
+    font-weight: bold;
+    opacity: 0.9;
+    border: none;
+  }
+  .boton-inicio:hover {
+    opacity: none;
+    background: #02111b;
+    color: #e6fafc;
+    transition: 1s;
+    transform: scale(1.2);
+  }
+}
+
+/* Contacto */
+.contacto-cuervos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  .titulo-contacto {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+.contact {
+  width: 30%;
+  text-align: center;
+  background: #e6fafc;
+  margin: 40px;
+  padding: 70px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  background: transparent;
+  color: #02111b;
+  font-weight: bold;
+  border: 2px solid #02111b;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.boton:hover {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #02111b;
+  color: #fff;
+}
+
+// Quienes somos?
+.Quien-Bg {
+    background: #e6fafc;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+.nav-head-quien {
+  background: #02111b;
+  align-self: start;
+  ul {
+    li {
+      a {
+        color: #e6fafc;
+      }
+      a:hover {
+        background: #e6fafc;
+        color: #02111b;
+      }
+    }
+  }
 }
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-/* Inicio */
-.nav{
-    width: 100%;
-}
-.nav-head{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
-.nav-head img{
-    width: 190px;
-    height: 150px;
-    padding-left: 20%;
-}
-.nav-head ul{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-}
-.nav-head ul li{
-    list-style: none;
-    padding: 0 20px 0 20px;
-
-}
-.nav-head ul li a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #02111B;
-    font-weight: bold;
-    padding: 10px;
-
-}
-.nav-head ul li a:hover{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #02111B;
-    background: #E6FAFC;
-    font-weight: bold;
-    transition: 2s;
-    border-radius: 25%;
-}
-.inicio-cuervos {
-    height: 67vh;
+.Quien-cuervos {
+  height: 67vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
     text-align: center;
-    width: 100%;
-}
-.inicio-cuervos h1{
-    justify-content: start;
-    align-items: center;
     font-size: 6em;
-    color: #02111B;
+    color: #02111b;
     font-weight: bold;
     text-transform: uppercase;
-}
-/* Contacto */
-.inicio-cuervos .titulo-contacto{
-    font-size: 2em;
-}
-.contact{
-    border: 1px solid black;
-    background: #E6FAFC;
-    width: 50%;
-    padding: 30px 0px;
-}
-.form-control{
-    background: transparent;
-    color: #02111B;
-    font-weight: bold;
-    border: 2px solid #02111B;
-    margin-left: 20%;
-    width: 60%;
-    text-align: left;
-
-}
-
-.boton{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: transparent;
-}
-.inicio-footer {
-    position: fixed;
+  }
+  .contenido {
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    background: #e6fafc;
+    p{
+        font-size: 1.5em;
+        b{
+            text-transform: uppercase;
+        }
+        a{
+            color: #02111b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    } 
+  }
+  .quien-img{
     display: flex;
-    font-size: 40px;
-    bottom: 10px;
-    left: 10px;
-    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    p{
+        img{
+            width: 200px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+        b{
+            padding: 10px;
+            background: #3b5998;
+            color: #02111b;
+            cursor: pointer;
+        }
+        b:hover{
+            background: #02111b;
+            color: #e6fafc;
+            transition: 1s;
+
+        }
+    }
+}
 }
 
-.inicio-footer i{
-    background: #E6FAFC;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 4px;
+.inicio-footer {
+  position: fixed;
+  display: flex;
+  font-size: 40px;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
 }
-.inicio-footer i:nth-child(1){
-    color: #51CB20;
-}
-.inicio-footer i:nth-child(2){
-    color: #2708A0;
-}
-.inicio-footer i:nth-child(3){
 
-color: #34E4EA;
+.inicio-footer i {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 4px;
+}
+.inicio-footer i:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: 2s;
+}
+.inicio-footer i:nth-child(1) {
+  color: #51cb20;
+}
+.inicio-footer i:nth-child(1):hover {
+  color: #fff;
+  background: #51cb20;
+}
+.inicio-footer i:nth-child(2) {
+  color: #3b5998;
+}
+.inicio-footer i:nth-child(2):hover {
+  color: #fff;
+  background: #3b5998;
+}
+.inicio-footer i:nth-child(3) {
+  color: #34e4ea;
+}
+.inicio-footer i:nth-child(3):hover {
+  color: #fff;
+  background: #34e4ea;
 }
