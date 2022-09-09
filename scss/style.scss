@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.Inicio-Bg{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    background-image: url(../img/bg-inicio-cuervos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+/* Inicio */
+.nav{
+    width: 100%;
+}
+.nav-head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.nav-head img{
+    width: 190px;
+    height: 150px;
+    padding-left: 20%;
+}
+.nav-head ul{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.nav-head ul li{
+    list-style: none;
+    padding: 0 20px 0 20px;
+
+}
+.nav-head ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #02111B;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.nav-head ul li a:hover{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #02111B;
+    background: #E6FAFC;
+    font-weight: bold;
+    transition: 2s;
+    border-radius: 25%;
+}
+.inicio-cuervos {
+    height: 67vh;
+    text-align: center;
+    width: 100%;
+}
+.inicio-cuervos h1{
+    justify-content: start;
+    align-items: center;
+    font-size: 6em;
+    color: #02111B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Contacto */
+.inicio-cuervos .titulo-contacto{
+    font-size: 2em;
+}
+.contact{
+    border: 1px solid black;
+    background: #E6FAFC;
+    width: 50%;
+    padding: 30px 0px;
+}
+.form-control{
+    background: transparent;
+    color: #02111B;
+    font-weight: bold;
+    border: 2px solid #02111B;
+    margin-left: 20%;
+    width: 60%;
+    text-align: left;
+
+}
+
+.boton{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+}
+.inicio-footer {
+    position: fixed;
+    display: flex;
+    font-size: 40px;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.inicio-footer i{
+    background: #E6FAFC;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 4px;
+}
+.inicio-footer i:nth-child(1){
+    color: #51CB20;
+}
+.inicio-footer i:nth-child(2){
+    color: #2708A0;
+}
+.inicio-footer i:nth-child(3){
+
+color: #34E4EA;
+}
