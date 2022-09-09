@@ -39,7 +39,7 @@ footer {
 
 .nav-head img {
   width: 190px;
-  height: 150px;
+  height: 160px;
   padding-left: 20%; }
 
 .nav-head ul {
@@ -192,7 +192,12 @@ footer {
       .Quien-cuervos .contenido p a {
         color: #02111b;
         text-decoration: none;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: 2s; }
+      .Quien-cuervos .contenido p a:hover {
+        text-decoration: underline;
+        font-size: 1.6em;
+        transition: 1s; }
   .Quien-cuervos .quien-img {
     display: flex;
     justify-content: space-around;
@@ -206,7 +211,8 @@ footer {
       padding: 10px;
       background: #3b5998;
       color: #02111b;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 1s; }
     .Quien-cuervos .quien-img p b:hover {
       background: #02111b;
       color: #e6fafc;

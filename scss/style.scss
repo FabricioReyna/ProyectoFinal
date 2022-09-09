@@ -43,7 +43,7 @@ footer {
 }
 .nav-head img {
   width: 190px;
-  height: 150px;
+  height: 160px;
   padding-left: 20%;
 }
 .nav-head ul {
@@ -213,6 +213,12 @@ footer {
             color: #02111b;
             text-decoration: none;
             font-weight: bold;
+            transition: 2s;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: 1.6em;
+            transition: 1s;
         }
     } 
   }
@@ -232,6 +238,7 @@ footer {
             background: #3b5998;
             color: #02111b;
             cursor: pointer;
+            transition: 1s;
         }
         b:hover{
             background: #02111b;
