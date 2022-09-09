@@ -28,8 +28,8 @@
         <a href="#"><img src="../img/z.png" alt="Logo-Cuervos" /></a>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="quienes-somos.html">Quienes somos?</a></li>
-          <li><a href="#">Como entrar?</a></li>
+          <li><a href="quienes-somos.html">¿Que es?</a></li>
+          <li><a href="#">Registro</a></li>
           <li><a href="#">Imagenes</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
@@ -63,8 +63,18 @@
           />
         </div>
         <div class="mb-3 container input">
+          <label for="problema">Tipo de problema</label>
+          <select name="Tipo" id="problema" class=" tipoproblema">
+            <option value="-">-</option>
+            <option value="Registro">Registro</option>
+            <option value="Bugs">Bugs</option>
+            <option value="Otros">Otros</option>
+          </select>
+       
+        </div>
+        <div class="mb-3 container input">
           <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
+            >Descripcion de tu problema</label
           >
           <textarea
             class="form-control"

@@ -89,7 +89,8 @@ footer {
 .botones {
   display: flex;
   height: 100%;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   .boton-inicio {
@@ -100,6 +101,9 @@ footer {
     font-weight: bold;
     opacity: 0.9;
     border: none;
+    position: relative;
+    right: 100%;
+    
   }
   .boton-inicio:hover {
     opacity: none;
@@ -108,7 +112,9 @@ footer {
     transition: 1s;
     transform: scale(1.2);
   }
+
 }
+
 
 /* Contacto */
 .contacto-cuervos {
@@ -120,16 +126,18 @@ footer {
   .titulo-contacto {
     font-size: 3em;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
   }
 }
 .contact {
   width: 30%;
   text-align: center;
-  background: #e6fafc;
+  background: #E0DDCF;
   margin: 40px;
   padding: 70px;
-  border: 1px solid black;
   border-radius: 10%;
+  opacity: 0.90;
 }
 .input {
   display: flex;
@@ -137,11 +145,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.tipoproblema{
+  @extend .form-control;
+  text-transform: uppercase;
+}
 .form-control {
   background: transparent;
   color: #02111b;
   font-weight: bold;
-  border: 2px solid #02111b;
+  border: 2px solid #2D232E;
   width: 100%;
   text-align: left;
   display: flex;
@@ -153,6 +165,7 @@ footer {
   padding: 10px 20px;
   border-radius: 10px;
   background: transparent;
+  border: 2px solid #2D232E;
 }
 
 .boton:hover {
@@ -164,7 +177,7 @@ footer {
 
 // Quienes somos?
 .Quien-Bg {
-    background: #e6fafc;
+    background: #E0DDCF;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -203,9 +216,11 @@ footer {
     width: 70%;
     margin: 0;
     padding: 0;
-    background: #e6fafc;
+    background: transparent;
+
     p{
         font-size: 1.5em;
+        text-align: justify;
         b{
             text-transform: uppercase;
         }
@@ -235,7 +250,7 @@ footer {
         }
         b{
             padding: 10px;
-            background: #3b5998;
+            background: transparent;
             color: #02111b;
             cursor: pointer;
             transition: 1s;
@@ -249,7 +264,18 @@ footer {
     }
 }
 }
-
+// ComoEntar
+.form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    form{
+        .input-group{
+            padding: 10px;
+            width: 100%;
+        }
+    }
+}
 .inicio-footer {
   position: fixed;
   display: flex;
@@ -266,10 +292,12 @@ footer {
   border-radius: 50%;
   text-align: center;
   padding-top: 4px;
+  transform: 1s;
+  opacity: 0.60;
 }
 .inicio-footer i:hover {
   transform: rotate(360deg) scale(1.2);
-  transition: 2s;
+  transition: 1s;
 }
 .inicio-footer i:nth-child(1) {
   color: #51cb20;
