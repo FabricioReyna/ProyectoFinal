@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +18,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   width: 100%;
-  height: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0;
 }
@@ -275,6 +277,87 @@ footer {
             width: 100%;
         }
     }
+}
+
+// Contenido
+.contendio-cuervos{
+  h1{
+    text-align: center;
+    font-size: 6em;
+    color: #02111b;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.contenido{
+  text-align: center;
+  width: 100%;
+  .contenido-mejores{
+    width: 100%;
+    .mejores{
+      width: 100%;
+    
+        button{
+          
+        span{
+        opacity: none;
+        padding: 10px;
+        }  
+      }
+      
+      .mejor{
+        .video{
+          iframe{
+          width: 50%;
+          height: 60vh;
+          }
+        }
+      }
+    }
+  }
+  .contenido-cosplay{
+    .div-contendio-fan{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    position: relative;
+    left: 12%;
+    .cards{
+      background-color: #e6fafc;
+      font-size: 1.3em;
+      text-align: justify;
+      transition: 2s;
+      border: none;
+      img{
+        height: 100%;
+      }
+    }
+    .cards:hover{
+      background: #2D232E;
+      color: #e6fafc;
+      transition: 2s;
+    }
+    .cards:nth-child(1):hover{
+      transition: 2s;
+      transform: translate(50%);
+    }
+    .cards:nth-child(3):hover{
+      transition: 2s;
+      transform: translate(50%);
+    }
+    .cards:nth-child(2):hover{
+      transition: 2s;
+      transform: translate(-50%);
+    }
+    .cards:nth-child(4):hover{
+      transition: 2s;
+      transform: translate(-50%);
+    }
+    }
+
+  }
 }
 .inicio-footer {
   position: fixed;

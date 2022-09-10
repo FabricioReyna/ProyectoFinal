@@ -14,7 +14,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0; }
 
@@ -235,6 +235,58 @@ footer {
   .form form .input-group {
     padding: 10px;
     width: 100%; }
+
+.contendio-cuervos h1 {
+  text-align: center;
+  font-size: 6em;
+  color: #02111b;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.contenido {
+  text-align: center;
+  width: 100%; }
+  .contenido .contenido-mejores {
+    width: 100%; }
+    .contenido .contenido-mejores .mejores {
+      width: 100%; }
+      .contenido .contenido-mejores .mejores button span {
+        opacity: none;
+        padding: 10px; }
+      .contenido .contenido-mejores .mejores .mejor .video iframe {
+        width: 50%;
+        height: 60vh; }
+  .contenido .contenido-cosplay .div-contendio-fan {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    position: relative;
+    left: 12%; }
+    .contenido .contenido-cosplay .div-contendio-fan .cards {
+      background-color: #e6fafc;
+      font-size: 1.3em;
+      text-align: justify;
+      transition: 2s;
+      border: none; }
+      .contenido .contenido-cosplay .div-contendio-fan .cards img {
+        height: 100%; }
+    .contenido .contenido-cosplay .div-contendio-fan .cards:hover {
+      background: #2D232E;
+      color: #e6fafc;
+      transition: 2s; }
+    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(1):hover {
+      transition: 2s;
+      transform: translate(50%); }
+    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(3):hover {
+      transition: 2s;
+      transform: translate(50%); }
+    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(2):hover {
+      transition: 2s;
+      transform: translate(-50%); }
+    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(4):hover {
+      transition: 2s;
+      transform: translate(-50%); }
 
 .inicio-footer {
   position: fixed;
