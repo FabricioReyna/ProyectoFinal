@@ -24,16 +24,51 @@
   </head>
   <body class="container-fluid GridPadre Quien-Bg">
     <header class="nav">
-      <nav class="nav-head nav-head-quien">
-        <a href="#"><img src="../img/z.png" alt="Logo-Cuervos" /></a>
-        <ul>
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="quienes-somos.html">¿Que es?</a></li>
-          <li><a href="#">Registro</a></li>
-          <li><a href="contenido.html">Imagenes</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          
-        </ul>
+      <<nav class="navbar navbar-expand-lg nav-head">
+        <a href="#"
+          ><img src="../img/z.png" alt="Logo-Cuervos" class="img-fluid img"
+        /></a>
+
+        <div class="container-fluid nav-header">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-collapser"
+            id="navbarScroll"
+          >
+            <ul
+              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100%"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">¿Que es?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=contenido.html">Imagenes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="Quien-cuervos">
@@ -44,39 +79,29 @@
         </p>
       </div>
       <div class="container form">
-        <form action="">
+        <form action="" class="form-style">
+          <label for="iput" class="label-a">Nombre de Usuario</label>
             <div class="input-group mb-3">
+            
                 <span class="input-group-text" id="basic-addon1">#</span>
-                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1" required>
+                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1" required id="iput">
               </div>
-
+              <label for="CorreoElectronico" class="label-a">Correo Electronico</label>
               <div class="input-group mb-3">
-                <input type="gmail" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                <input type="gmail" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2" required id="CorreoElectronico">
                 <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
               </div>
-              
+              <label for="Contraseña" class="label-a">Contraseña</label>
               <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-            
-              </div>
-              
-            
-              
+                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" required id="Contraseña">
+              </div>          
+              <label for="PersonajeFavorito" class="label-a">Personaje Favorito</label>
               <div class="input-group mb-3">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Que personaje te gusta?</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Isabel Cantú</a></li>
-                  <li><a class="dropdown-item" href="#">Isabel Iglesias</a></li>
-                  <li><a class="dropdown-item" href="#">Aitor Cardoné</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <input type="text" class="form-control" placeholder="Personaje Favorito" aria-label="Username" aria-describedby="basic-addon1" required id="PersonajeFavorito">
               </div>
-              
+              <label for="Biografia" class="label-a">Biografia</label>
               <div class="input-group">
-                <span class="input-group-text">Biografía</span>
-                <textarea class="form-control" aria-label="With textarea" style="resize: none;"></textarea>
+                <textarea class="form-control textarea" aria-label="With textarea" style="resize: none;" placeholder="Cuentate algo..." id="Biografia"></textarea>
               </div>
               <button class="boton">Registrarse</button>
         </form>
