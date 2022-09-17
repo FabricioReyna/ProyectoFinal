@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  transition: 2s; }
 
 .GridPadre {
   display: grid;
@@ -24,9 +25,10 @@ main {
 footer {
   grid-area: footer; }
 
-/* Inicio */
+/* Nav*/
 .nav {
-  width: 100%; }
+  width: 100%;
+  background: #02111b; }
   .nav .nav-head {
     display: flex;
     justify-content: space-between;
@@ -35,7 +37,8 @@ footer {
     .nav .nav-head img {
       width: 190px;
       height: 160px;
-      padding-left: 20%; }
+      padding-left: 20%;
+      margin-bottom: 10px; }
     .nav .nav-head .nav-header {
       justify-content: center;
       background: transparent; }
@@ -192,7 +195,7 @@ footer {
     text-transform: uppercase; }
   .Quien-cuervos .contenido {
     height: 100%;
-    width: 70%;
+    width: 90%;
     margin: 0;
     padding: 0;
     background: transparent; }
@@ -214,7 +217,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%; }
+    width: 100%; }
     .Quien-cuervos .quien-img p img {
       width: 200px;
       height: 250px;
@@ -229,14 +232,34 @@ footer {
       background: #02111b;
       color: #e6fafc;
       transition: 1s; }
-
-.form {
-  display: flex;
-  text-align: center;
-  justify-content: center; }
-  .form form .input-group {
-    padding: 10px;
-    width: 100%; }
+  .Quien-cuervos .form {
+    display: grid;
+    width: 50%; }
+    .Quien-cuervos .form form {
+      display: flex;
+      flex-direction: column; }
+      .Quien-cuervos .form form label {
+        font-weight: bold;
+        font-size: 1.5em; }
+      .Quien-cuervos .form form .input-group {
+        padding-bottom: 10px;
+        width: 100%; }
+        .Quien-cuervos .form form .input-group .form-control, .Quien-cuervos .form form .input-group .contacto-cuervos .contact .tipoproblema, .contacto-cuervos .contact .Quien-cuervos .form form .input-group .tipoproblema {
+          border: 1px solid black; }
+        .Quien-cuervos .form form .input-group span {
+          color: #e6fafc;
+          background: #02111b; }
+    .Quien-cuervos .form .boton {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      background: transparent;
+      border: 2px solid #2d232e;
+      bottom: 3em;
+      padding: 10px;
+      width: 50%; }
 
 .contendio-cuervos h1 {
   text-align: center;
@@ -245,48 +268,48 @@ footer {
   font-weight: bold;
   text-transform: uppercase; }
 
-.contenido {
+.contendio-cuervos .contenido {
   text-align: center;
   width: 100%; }
-  .contenido .contenido-mejores {
+  .contendio-cuervos .contenido .contenido-mejores {
     width: 100%; }
-    .contenido .contenido-mejores .mejores {
+    .contendio-cuervos .contenido .contenido-mejores .mejores {
       width: 100%; }
-      .contenido .contenido-mejores .mejores button span {
+      .contendio-cuervos .contenido .contenido-mejores .mejores button span {
         opacity: none;
         padding: 10px; }
-      .contenido .contenido-mejores .mejores .mejor .video iframe {
+      .contendio-cuervos .contenido .contenido-mejores .mejores .mejor .video iframe {
         width: 50%;
         height: 60vh; }
-  .contenido .contenido-cosplay .div-contendio-fan {
+  .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     position: relative;
     left: 12%; }
-    .contenido .contenido-cosplay .div-contendio-fan .cards {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
       background-color: #e6fafc;
       font-size: 1.3em;
       text-align: justify;
       transition: 2s;
       border: none; }
-      .contenido .contenido-cosplay .div-contendio-fan .cards img {
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
         height: 100%; }
-    .contenido .contenido-cosplay .div-contendio-fan .cards:hover {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:hover {
       background: #2d232e;
       color: #e6fafc;
       transition: 2s; }
-    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(1):hover {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(1):hover {
       transition: 2s;
       transform: translate(50%); }
-    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(3):hover {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(3):hover {
       transition: 2s;
       transform: translate(50%); }
-    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(2):hover {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(2):hover {
       transition: 2s;
       transform: translate(-50%); }
-    .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(4):hover {
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(4):hover {
       transition: 2s;
       transform: translate(-50%); }
 
@@ -333,7 +356,7 @@ footer {
   color: #fff;
   background: #34e4ea; }
 
-@media (max-width: 812px) {
+@media (max-width: 375px) {
   .nav {
     width: 100%;
     text-align: center;
@@ -430,7 +453,84 @@ footer {
       color: #02111b; }
     100% {
       background: transparent;
-      color: #02111b; } } }
+      color: #02111b; } }
+  .Quien-cuervos {
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Quien-cuervos h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .Quien-cuervos .contenido {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+      background: transparent;
+      transition: 2s; }
+      .Quien-cuervos .contenido p {
+        font-size: 1em;
+        text-align: justify; }
+        .Quien-cuervos .contenido p b {
+          text-transform: uppercase; }
+        .Quien-cuervos .contenido p a {
+          color: #02111b;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 2s; }
+        .Quien-cuervos .contenido p a:hover {
+          text-decoration: underline;
+          font-size: 1.6em;
+          transition: 1s; }
+    .Quien-cuervos .quien-img {
+      display: block;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%; }
+      .Quien-cuervos .quien-img p img {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 10px; }
+      .Quien-cuervos .quien-img p b {
+        padding: 10px;
+        background: transparent;
+        color: #02111b;
+        cursor: pointer;
+        transition: 1s; }
+      .Quien-cuervos .quien-img p b:hover {
+        background: #02111b;
+        color: #e6fafc;
+        transition: 1s; }
+    .Quien-cuervos .form {
+      display: grid;
+      width: 60%; }
+      .Quien-cuervos .form form {
+        display: flex;
+        flex-direction: column; }
+        .Quien-cuervos .form form label {
+          font-weight: bold;
+          font-size: 1.2em; }
+        .Quien-cuervos .form form .input-group {
+          padding-bottom: 10px;
+          width: 100%; }
+          .Quien-cuervos .form form .input-group .form-control, .Quien-cuervos .form form .input-group .contacto-cuervos .contact .tipoproblema, .contacto-cuervos .contact .Quien-cuervos .form form .input-group .tipoproblema {
+            border: 1px solid black; }
+      .Quien-cuervos .form .boton {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        bottom: 3em;
+        padding: 10px;
+        width: 100%; } }
 
 @media (max-width: 1024px) {
   .nav {
@@ -473,6 +573,50 @@ footer {
               transition: 2s; }
               .nav .nav-head .nav-header .navbar-collapser ul .nav-item:hover .nav-link {
                 color: #02111b;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: 2s; }
+  .nav-h {
+    width: 100%;
+    text-align: center;
+    transition: 2s; }
+    .nav-h .nav-html {
+      display: block;
+      justify-content: none;
+      align-items: none;
+      text-align: center;
+      width: 100%; }
+      .nav-h .nav-html img {
+        width: 150px;
+        height: 160px;
+        padding-left: 0%;
+        margin-bottom: 10px; }
+      .nav-h .nav-html .nav-header {
+        justify-content: center; }
+        .nav-h .nav-html .nav-header button {
+          background: #e6fafc;
+          justify-content: center;
+          width: 20%; }
+        .nav-h .nav-html .nav-header .navbar-collapser {
+          width: 50%; }
+          .nav-h .nav-html .nav-header .navbar-collapser ul {
+            font-weight: bold;
+            display: flex;
+            width: 100%; }
+            .nav-h .nav-html .nav-header .navbar-collapser ul .nav-item {
+              padding: 0px 0px;
+              margin: 0px 0px;
+              border-radius: 10%;
+              transition: 2s; }
+              .nav-h .nav-html .nav-header .navbar-collapser ul .nav-item .nav-link {
+                color: #e6fafc;
+                font-weight: bold;
+                text-transform: uppercase; }
+            .nav-h .nav-html .nav-header .navbar-collapser ul .nav-item:hover {
+              background: none;
+              transition: 0s; }
+              .nav-h .nav-html .nav-header .navbar-collapser ul .nav-item:hover .nav-link {
+                color: #e6fafc;
                 font-weight: bold;
                 text-transform: uppercase;
                 transition: 2s; }
@@ -527,4 +671,63 @@ footer {
       color: #02111b; }
     100% {
       background: transparent;
-      color: #02111b; } } }
+      color: #02111b; } }
+  .Quien-cuervos {
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Quien-cuervos h1 {
+      text-align: center;
+      font-size: 4em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .Quien-cuervos .contenido {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 20px;
+      background: transparent;
+      transition: 2s; }
+      .Quien-cuervos .contenido p {
+        font-size: 1.3em;
+        text-align: justify; }
+        .Quien-cuervos .contenido p b {
+          text-transform: uppercase; }
+        .Quien-cuervos .contenido p a {
+          color: #02111b;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 2s; }
+        .Quien-cuervos .contenido p a:hover {
+          text-decoration: underline;
+          font-size: 1.6em;
+          transition: 1s; }
+    .Quien-cuervos .form {
+      display: grid;
+      width: 100%;
+      transition: 2s; }
+      .Quien-cuervos .form form {
+        display: flex;
+        flex-direction: column; }
+        .Quien-cuervos .form form label {
+          font-weight: bold;
+          font-size: 1.5em; }
+        .Quien-cuervos .form form .input-group {
+          padding-bottom: 10px;
+          width: 100%; }
+          .Quien-cuervos .form form .input-group .form-control, .Quien-cuervos .form form .input-group .contacto-cuervos .contact .tipoproblema, .contacto-cuervos .contact .Quien-cuervos .form form .input-group .tipoproblema {
+            border: 1px solid black; }
+      .Quien-cuervos .form .boton {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        bottom: 3em;
+        padding: 10px;
+        width: 50%; } }
