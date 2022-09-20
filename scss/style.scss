@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  transition: 2s;
 }
 .GridPadre {
   display: grid;
@@ -33,6 +32,7 @@ footer {
 .nav {
   width: 100%;
   background: #02111b;
+  transition: 2s;
   .nav-head {
     display: flex;
     justify-content: space-between;
@@ -361,7 +361,7 @@ footer {
         .mejor {
           .video {
             iframe {
-              width: 50%;
+              width: 60%;
               height: 60vh;
             }
           }
@@ -371,41 +371,33 @@ footer {
     .contenido-cosplay {
       .div-contendio-fan {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         text-align: center;
-        position: relative;
-        left: 12%;
+        justify-content: center;
+        flex-wrap: wrap;
         .cards {
           background-color: #e6fafc;
           font-size: 1.3em;
           text-align: justify;
           transition: 2s;
           border: none;
+          margin: 10px;
+
           img {
             height: 100%;
           }
-        }
-        .cards:hover {
-          background: #2d232e;
-          color: #e6fafc;
-          transition: 2s;
-        }
-        .cards:nth-child(1):hover {
-          transition: 2s;
-          transform: translate(50%);
-        }
-        .cards:nth-child(3):hover {
-          transition: 2s;
-          transform: translate(50%);
-        }
-        .cards:nth-child(2):hover {
-          transition: 2s;
-          transform: translate(-50%);
-        }
-        .cards:nth-child(4):hover {
-          transition: 2s;
-          transform: translate(-50%);
+          .card-text{
+            a{
+              color: #3b5998;
+              text-decoration: none;
+              font-size: 1.1em;
+            }
+            a:hover{
+              color: #34e4ea;
+              transform: 2s;
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
@@ -418,276 +410,44 @@ footer {
   bottom: 10px;
   left: 10px;
   cursor: pointer;
-}
 
-.inicio-footer i {
-  background: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 4px;
-  transform: 1s;
-  opacity: 0.6;
-}
-.inicio-footer i:hover {
-  transform: rotate(360deg) scale(1.2);
-  transition: 1s;
-}
-.inicio-footer i:nth-child(1) {
-  color: #51cb20;
-}
-.inicio-footer i:nth-child(1):hover {
-  color: #fff;
-  background: #51cb20;
-}
-.inicio-footer i:nth-child(2) {
-  color: #3b5998;
-}
-.inicio-footer i:nth-child(2):hover {
-  color: #fff;
-  background: #3b5998;
-}
-.inicio-footer i:nth-child(3) {
-  color: #34e4ea;
-}
-.inicio-footer i:nth-child(3):hover {
-  color: #fff;
-  background: #34e4ea;
-}
-
-// Media Celular
-@media (max-width: 375px) {
-  // NAV
-  .nav {
-    width: 100%;
+  i {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     text-align: center;
-    transition: 2s;
-    .nav-head {
-      display: block;
-      justify-content: none;
-      align-items: none;
-      text-align: center;
-      width: 100%;
-
-      img {
-        width: 150px;
-        height: 160px;
-        padding-left: 0%;
-        margin-bottom: 10px;
-      }
-
-      .nav-header {
-        justify-content: center;
-        button {
-          background: #e6fafc;
-          justify-content: center;
-          width: 20%;
-        }
-        .navbar-collapser {
-          width: 50%;
-          justify-content: flex-end;
-          ul {
-            font-weight: bold;
-            display: flex;
-            background: #e6fafc;
-            .nav-item {
-              padding: 0px 0px;
-              margin: 0px 0px;
-              border-radius: 10%;
-              transition: 2s;
-              .nav-link {
-                color: #02111b;
-                font-weight: bold;
-                text-transform: uppercase;
-              }
-            }
-            .nav-item:hover {
-              background: #e6fafc;
-              transition: 2s;
-              .nav-link {
-                color: #02111b;
-                font-weight: bold;
-                text-transform: uppercase;
-                transition: 2s;
-              }
-            }
-          }
-        }
-      }
-    }
+    padding-top: 4px;
+    transform: 1s;
+    opacity: 0.6;
   }
-
-  // INICIO
-  .inicio-cuervos {
-    height: 67vh;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    .h1 {
-      justify-content: start;
-      align-items: center;
-      font-size: 3em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #e6fafc;
-    }
-    .inicio-img {
-      iframe {
-        width: 100%;
-        height: 300px;
-      }
-    }
+  i:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: 1s;
   }
-  // Contacto
-  .contacto-cuervos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    .titulo-contacto {
-      font-size: 4em;
-      text-transform: uppercase;
-      letter-spacing: 10px;
-      color: #e6fafc;
-      font-weight: bold;
-    }
-
-    .contact {
-      width: 80%;
-      text-align: center;
-      background: #e0ddcf;
-      margin: 40px;
-      padding: 50px;
-      border-radius: 10%;
-      .boton {
-        padding: 10px 20px;
-        border-radius: 10px;
-        background: transparent;
-        border: 2px solid #2d232e;
-        animation: mov 10s infinite linear;
-      }
-      @keyframes mov {
-        0% {
-          background: #02111b;
-          color: #e6fafc;
-        }
-        50% {
-          transform: scale(1.2);
-          transition: 2s;
-          color: #02111b;
-        }
-        100% {
-          background: transparent;
-          color: #02111b;
-        }
-      }
-    }
+  i:nth-child(1) {
+    color: #51cb20;
   }
-  // Registro
-  .Quien-cuervos {
-    height: 67vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      color: #02111b;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .contenido {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0px;
-      background: transparent;
-      transition: 2s;
-
-      p {
-        font-size: 1em;
-        text-align: justify;
-        b {
-          text-transform: uppercase;
-        }
-        a {
-          color: #02111b;
-          text-decoration: none;
-          font-weight: bold;
-          transition: 2s;
-        }
-        a:hover {
-          text-decoration: underline;
-          font-size: 1.6em;
-          transition: 1s;
-        }
-      }
-    }
-
-    .quien-img {
-      display: block;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      p {
-        img {
-          width: 200px;
-          height: 250px;
-          margin-bottom: 10px;
-        }
-        b {
-          padding: 10px;
-          background: transparent;
-          color: #02111b;
-          cursor: pointer;
-          transition: 1s;
-        }
-        b:hover {
-          background: #02111b;
-          color: #e6fafc;
-          transition: 1s;
-        }
-      }
-    }
-    // ComoEntar
-    .form {
-      display: grid;
-
-      width: 60%;
-      form {
-        display: flex;
-        flex-direction: column;
-        label {
-          font-weight: bold;
-          font-size: 1.2em;
-        }
-        .input-group {
-          padding-bottom: 10px;
-          width: 100%;
-          .form-control {
-            border: 1px solid black;
-          }
-        }
-      }
-      .boton {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        background: transparent;
-        border: 2px solid #2d232e;
-        bottom: 3em;
-        padding: 10px;
-        width: 100%;
-      }
-    }
+  i:nth-child(1):hover {
+    color: #fff;
+    background: #51cb20;
+  }
+  i:nth-child(2) {
+    color: #3b5998;
+  }
+  i:nth-child(2):hover {
+    color: #fff;
+    background: #3b5998;
+  }
+  i:nth-child(3) {
+    color: #34e4ea;
+  }
+  i:nth-child(3):hover {
+    color: #fff;
+    background: #34e4ea;
   }
 }
+
 // Tablet
 @media (max-width: 1024px) {
   // Nav
@@ -948,4 +708,407 @@ footer {
       }
     }
   }
+  // Contenido
+  .contendio-cuervos {
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .contenido {
+      text-align: center;
+      width: 100%;
+      .contenido-mejores {
+        width: 100%;
+        .mejores {
+          width: 100%;
+
+          button {
+            span {
+              opacity: 0;
+              padding: 10px;
+            }
+          }
+
+          .mejor {
+            .video {
+              iframe {
+                width: 80%;
+                height: 60vh;
+              }
+            }
+          }
+        }
+      }
+      .contenido-cosplay {
+        .div-contendio-fan {
+          width: 100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .cards {
+            background-color: #e6fafc;
+            font-size: 1.3em;
+            text-align: justify;
+            transition: 2s;
+            border: none;
+            margin: 10px;
+
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  // FOOTER
+  .inicio-footer {
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+  
+    i {
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 30%;
+      text-align: center;
+      padding-top: 4px;
+      transform: 1s;
+      opacity: 0.6;
+    }
+    i:hover {
+      transform: rotate(360deg) scale(1.2);
+      transition: 1s;
+    }
+    i:nth-child(1) {
+      color: #51cb20;
+    }
+    i:nth-child(1):hover {
+      color: #fff;
+      background: #51cb20;
+    }
+    i:nth-child(2) {
+      color: #3b5998;
+    }
+    i:nth-child(2):hover {
+      color: #fff;
+      background: #3b5998;
+    }
+    i:nth-child(3) {
+      color: #34e4ea;
+    }
+    i:nth-child(3):hover {
+      color: #fff;
+      background: #34e4ea;
+    }
+  }
+}
+// Media Celular
+@media (max-width: 812px) {
+  // NAV
+  .nav {
+    width: 100%;
+    text-align: center;
+    transition: 2s;
+    .nav-head {
+      display: block;
+      justify-content: none;
+      align-items: none;
+      text-align: center;
+      width: 100%;
+
+      img {
+        width: 150px;
+        height: 160px;
+        padding-left: 0%;
+        margin-bottom: 10px;
+      }
+
+      .nav-header {
+        justify-content: center;
+        button {
+          background: #e6fafc;
+          justify-content: center;
+          width: 20%;
+        }
+        .navbar-collapser {
+          width: 50%;
+          justify-content: flex-end;
+          ul {
+            font-weight: bold;
+            display: flex;
+            background: #e6fafc;
+            .nav-item {
+              padding: 0px 0px;
+              margin: 0px 0px;
+              border-radius: 10%;
+              transition: 2s;
+              .nav-link {
+                color: #02111b;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+            .nav-item:hover {
+              background: #e6fafc;
+              transition: 2s;
+              .nav-link {
+                color: #02111b;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: 2s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // INICIO
+  .inicio-cuervos {
+    height: 67vh;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .h1 {
+      justify-content: start;
+      align-items: center;
+      font-size: 3em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #e6fafc;
+    }
+    .inicio-img {
+      iframe {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+  // Contacto
+  .contacto-cuervos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .titulo-contacto {
+      font-size: 4em;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      color: #e6fafc;
+      font-weight: bold;
+    }
+
+    .contact {
+      width: 80%;
+      text-align: center;
+      background: #e0ddcf;
+      margin: 40px;
+      padding: 50px;
+      border-radius: 10%;
+      .boton {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        animation: mov 10s infinite linear;
+      }
+      @keyframes mov {
+        0% {
+          background: #02111b;
+          color: #e6fafc;
+        }
+        50% {
+          transform: scale(1.2);
+          transition: 2s;
+          color: #02111b;
+        }
+        100% {
+          background: transparent;
+          color: #02111b;
+        }
+      }
+    }
+  }
+  // Registro
+  .Quien-cuervos {
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .contenido {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 10px;
+      background: transparent;
+      transition: 2s;
+
+      p {
+        font-size: 0.8em;
+        text-align: none;
+        transition: 2s;
+        b {
+          text-transform: uppercase;
+        }
+        a {
+          color: #02111b;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 2s;
+        }
+        a:hover {
+          text-decoration: underline;
+          font-size: 1.6em;
+          transition: 1s;
+        }
+      }
+    }
+
+    .quien-img {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      p {
+  
+        img {
+          width: 120px;
+          height: 150px;
+          margin-bottom: 10px;
+        }
+        b {
+          padding: 10px;
+          background: transparent;
+          color: #02111b;
+          cursor: pointer;
+          transition: 1s;
+        }
+        b:hover {
+          background: #02111b;
+          color: #e6fafc;
+          transition: 1s;
+        }
+      }
+    }
+    // ComoEntar
+    .form {
+      display: grid;
+
+      width: 100%;
+      form {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+        .input-group {
+          padding-bottom: 10px;
+          width: 100%;
+          .form-control {
+            border: 1px solid black;
+          }
+        }
+      }
+      .boton {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        bottom: 3em;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+  // Contenido
+  .contendio-cuervos {
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .contenido {
+      text-align: center;
+      width: 100%;
+      .contenido-mejores {
+        width: 100%;
+        .mejores {
+          width: 100%;
+
+          button {
+            span {
+              opacity: 0;
+              padding: 10px;
+            }
+          }
+
+          .mejor {
+            .video {
+              iframe {
+                width: 100%;
+                height: 50vh;
+              }
+            }
+          }
+        }
+      }
+      .contenido-cosplay {
+        .div-contendio-fan {
+          width: 100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .cards {
+            background-color: #e6fafc;
+            font-size: 0.9em;
+            text-align: justify;
+            transition: 2s;
+            border: none;
+            margin-bottom: 10px;
+            display: flex;
+            width: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  // FOOTER
+
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }

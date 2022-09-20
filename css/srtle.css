@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  transition: 2s; }
+  font-family: "Poppins", sans-serif; }
 
 .GridPadre {
   display: grid;
@@ -28,7 +27,8 @@ footer {
 /* Nav*/
 .nav {
   width: 100%;
-  background: #02111b; }
+  background: #02111b;
+  transition: 2s; }
   .nav .nav-head {
     display: flex;
     justify-content: space-between;
@@ -279,39 +279,31 @@ footer {
         opacity: none;
         padding: 10px; }
       .contendio-cuervos .contenido .contenido-mejores .mejores .mejor .video iframe {
-        width: 50%;
+        width: 60%;
         height: 60vh; }
   .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     text-align: center;
-    position: relative;
-    left: 12%; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
       background-color: #e6fafc;
       font-size: 1.3em;
       text-align: justify;
       transition: 2s;
-      border: none; }
+      border: none;
+      margin: 10px; }
       .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
         height: 100%; }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:hover {
-      background: #2d232e;
-      color: #e6fafc;
-      transition: 2s; }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(1):hover {
-      transition: 2s;
-      transform: translate(50%); }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(3):hover {
-      transition: 2s;
-      transform: translate(50%); }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(2):hover {
-      transition: 2s;
-      transform: translate(-50%); }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards:nth-child(4):hover {
-      transition: 2s;
-      transform: translate(-50%); }
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a {
+        color: #3b5998;
+        text-decoration: none;
+        font-size: 1.1em; }
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a:hover {
+        color: #34e4ea;
+        transform: 2s;
+        text-decoration: underline; }
 
 .inicio-footer {
   position: fixed;
@@ -320,217 +312,33 @@ footer {
   bottom: 10px;
   left: 10px;
   cursor: pointer; }
-
-.inicio-footer i {
-  background: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 4px;
-  transform: 1s;
-  opacity: 0.6; }
-
-.inicio-footer i:hover {
-  transform: rotate(360deg) scale(1.2);
-  transition: 1s; }
-
-.inicio-footer i:nth-child(1) {
-  color: #51cb20; }
-
-.inicio-footer i:nth-child(1):hover {
-  color: #fff;
-  background: #51cb20; }
-
-.inicio-footer i:nth-child(2) {
-  color: #3b5998; }
-
-.inicio-footer i:nth-child(2):hover {
-  color: #fff;
-  background: #3b5998; }
-
-.inicio-footer i:nth-child(3) {
-  color: #34e4ea; }
-
-.inicio-footer i:nth-child(3):hover {
-  color: #fff;
-  background: #34e4ea; }
-
-@media (max-width: 375px) {
-  .nav {
-    width: 100%;
+  .inicio-footer i {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     text-align: center;
-    transition: 2s; }
-    .nav .nav-head {
-      display: block;
-      justify-content: none;
-      align-items: none;
-      text-align: center;
-      width: 100%; }
-      .nav .nav-head img {
-        width: 150px;
-        height: 160px;
-        padding-left: 0%;
-        margin-bottom: 10px; }
-      .nav .nav-head .nav-header {
-        justify-content: center; }
-        .nav .nav-head .nav-header button {
-          background: #e6fafc;
-          justify-content: center;
-          width: 20%; }
-        .nav .nav-head .nav-header .navbar-collapser {
-          width: 50%;
-          justify-content: flex-end; }
-          .nav .nav-head .nav-header .navbar-collapser ul {
-            font-weight: bold;
-            display: flex;
-            background: #e6fafc; }
-            .nav .nav-head .nav-header .navbar-collapser ul .nav-item {
-              padding: 0px 0px;
-              margin: 0px 0px;
-              border-radius: 10%;
-              transition: 2s; }
-              .nav .nav-head .nav-header .navbar-collapser ul .nav-item .nav-link {
-                color: #02111b;
-                font-weight: bold;
-                text-transform: uppercase; }
-            .nav .nav-head .nav-header .navbar-collapser ul .nav-item:hover {
-              background: #e6fafc;
-              transition: 2s; }
-              .nav .nav-head .nav-header .navbar-collapser ul .nav-item:hover .nav-link {
-                color: #02111b;
-                font-weight: bold;
-                text-transform: uppercase;
-                transition: 2s; }
-  .inicio-cuervos {
-    height: 67vh;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .inicio-cuervos .h1 {
-      justify-content: start;
-      align-items: center;
-      font-size: 3em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #e6fafc; }
-    .inicio-cuervos .inicio-img iframe {
-      width: 100%;
-      height: 300px; }
-  .contacto-cuervos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%; }
-    .contacto-cuervos .titulo-contacto {
-      font-size: 4em;
-      text-transform: uppercase;
-      letter-spacing: 10px;
-      color: #e6fafc;
-      font-weight: bold; }
-    .contacto-cuervos .contact {
-      width: 80%;
-      text-align: center;
-      background: #e0ddcf;
-      margin: 40px;
-      padding: 50px;
-      border-radius: 10%; }
-      .contacto-cuervos .contact .boton {
-        padding: 10px 20px;
-        border-radius: 10px;
-        background: transparent;
-        border: 2px solid #2d232e;
-        animation: mov 10s infinite linear; }
-  @keyframes mov {
-    0% {
-      background: #02111b;
-      color: #e6fafc; }
-    50% {
-      transform: scale(1.2);
-      transition: 2s;
-      color: #02111b; }
-    100% {
-      background: transparent;
-      color: #02111b; } }
-  .Quien-cuervos {
-    height: 67vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .Quien-cuervos h1 {
-      text-align: center;
-      font-size: 3em;
-      color: #02111b;
-      font-weight: bold;
-      text-transform: uppercase; }
-    .Quien-cuervos .contenido {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0px;
-      background: transparent;
-      transition: 2s; }
-      .Quien-cuervos .contenido p {
-        font-size: 1em;
-        text-align: justify; }
-        .Quien-cuervos .contenido p b {
-          text-transform: uppercase; }
-        .Quien-cuervos .contenido p a {
-          color: #02111b;
-          text-decoration: none;
-          font-weight: bold;
-          transition: 2s; }
-        .Quien-cuervos .contenido p a:hover {
-          text-decoration: underline;
-          font-size: 1.6em;
-          transition: 1s; }
-    .Quien-cuervos .quien-img {
-      display: block;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%; }
-      .Quien-cuervos .quien-img p img {
-        width: 200px;
-        height: 250px;
-        margin-bottom: 10px; }
-      .Quien-cuervos .quien-img p b {
-        padding: 10px;
-        background: transparent;
-        color: #02111b;
-        cursor: pointer;
-        transition: 1s; }
-      .Quien-cuervos .quien-img p b:hover {
-        background: #02111b;
-        color: #e6fafc;
-        transition: 1s; }
-    .Quien-cuervos .form {
-      display: grid;
-      width: 60%; }
-      .Quien-cuervos .form form {
-        display: flex;
-        flex-direction: column; }
-        .Quien-cuervos .form form label {
-          font-weight: bold;
-          font-size: 1.2em; }
-        .Quien-cuervos .form form .input-group {
-          padding-bottom: 10px;
-          width: 100%; }
-          .Quien-cuervos .form form .input-group .form-control, .Quien-cuervos .form form .input-group .contacto-cuervos .contact .tipoproblema, .contacto-cuervos .contact .Quien-cuervos .form form .input-group .tipoproblema {
-            border: 1px solid black; }
-      .Quien-cuervos .form .boton {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        background: transparent;
-        border: 2px solid #2d232e;
-        bottom: 3em;
-        padding: 10px;
-        width: 100%; } }
+    padding-top: 4px;
+    transform: 1s;
+    opacity: 0.6; }
+  .inicio-footer i:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: 1s; }
+  .inicio-footer i:nth-child(1) {
+    color: #51cb20; }
+  .inicio-footer i:nth-child(1):hover {
+    color: #fff;
+    background: #51cb20; }
+  .inicio-footer i:nth-child(2) {
+    color: #3b5998; }
+  .inicio-footer i:nth-child(2):hover {
+    color: #fff;
+    background: #3b5998; }
+  .inicio-footer i:nth-child(3) {
+    color: #34e4ea; }
+  .inicio-footer i:nth-child(3):hover {
+    color: #fff;
+    background: #34e4ea; }
 
 @media (max-width: 1024px) {
   .nav {
@@ -730,4 +538,290 @@ footer {
         border: 2px solid #2d232e;
         bottom: 3em;
         padding: 10px;
-        width: 50%; } }
+        width: 50%; }
+  .contendio-cuervos h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #02111b;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .contendio-cuervos .contenido {
+    text-align: center;
+    width: 100%; }
+    .contendio-cuervos .contenido .contenido-mejores {
+      width: 100%; }
+      .contendio-cuervos .contenido .contenido-mejores .mejores {
+        width: 100%; }
+        .contendio-cuervos .contenido .contenido-mejores .mejores button span {
+          opacity: 0;
+          padding: 10px; }
+        .contendio-cuervos .contenido .contenido-mejores .mejores .mejor .video iframe {
+          width: 80%;
+          height: 60vh; }
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
+        background-color: #e6fafc;
+        font-size: 1.3em;
+        text-align: justify;
+        transition: 2s;
+        border: none;
+        margin: 10px; }
+        .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
+          height: 100%; }
+  .inicio-footer {
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer; }
+    .inicio-footer i {
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 30%;
+      text-align: center;
+      padding-top: 4px;
+      transform: 1s;
+      opacity: 0.6; }
+    .inicio-footer i:hover {
+      transform: rotate(360deg) scale(1.2);
+      transition: 1s; }
+    .inicio-footer i:nth-child(1) {
+      color: #51cb20; }
+    .inicio-footer i:nth-child(1):hover {
+      color: #fff;
+      background: #51cb20; }
+    .inicio-footer i:nth-child(2) {
+      color: #3b5998; }
+    .inicio-footer i:nth-child(2):hover {
+      color: #fff;
+      background: #3b5998; }
+    .inicio-footer i:nth-child(3) {
+      color: #34e4ea; }
+    .inicio-footer i:nth-child(3):hover {
+      color: #fff;
+      background: #34e4ea; } }
+
+@media (max-width: 812px) {
+  .nav {
+    width: 100%;
+    text-align: center;
+    transition: 2s; }
+    .nav .nav-head {
+      display: block;
+      justify-content: none;
+      align-items: none;
+      text-align: center;
+      width: 100%; }
+      .nav .nav-head img {
+        width: 150px;
+        height: 160px;
+        padding-left: 0%;
+        margin-bottom: 10px; }
+      .nav .nav-head .nav-header {
+        justify-content: center; }
+        .nav .nav-head .nav-header button {
+          background: #e6fafc;
+          justify-content: center;
+          width: 20%; }
+        .nav .nav-head .nav-header .navbar-collapser {
+          width: 50%;
+          justify-content: flex-end; }
+          .nav .nav-head .nav-header .navbar-collapser ul {
+            font-weight: bold;
+            display: flex;
+            background: #e6fafc; }
+            .nav .nav-head .nav-header .navbar-collapser ul .nav-item {
+              padding: 0px 0px;
+              margin: 0px 0px;
+              border-radius: 10%;
+              transition: 2s; }
+              .nav .nav-head .nav-header .navbar-collapser ul .nav-item .nav-link {
+                color: #02111b;
+                font-weight: bold;
+                text-transform: uppercase; }
+            .nav .nav-head .nav-header .navbar-collapser ul .nav-item:hover {
+              background: #e6fafc;
+              transition: 2s; }
+              .nav .nav-head .nav-header .navbar-collapser ul .nav-item:hover .nav-link {
+                color: #02111b;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: 2s; }
+  .inicio-cuervos {
+    height: 67vh;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .inicio-cuervos .h1 {
+      justify-content: start;
+      align-items: center;
+      font-size: 3em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #e6fafc; }
+    .inicio-cuervos .inicio-img iframe {
+      width: 100%;
+      height: 300px; }
+  .contacto-cuervos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; }
+    .contacto-cuervos .titulo-contacto {
+      font-size: 4em;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      color: #e6fafc;
+      font-weight: bold; }
+    .contacto-cuervos .contact {
+      width: 80%;
+      text-align: center;
+      background: #e0ddcf;
+      margin: 40px;
+      padding: 50px;
+      border-radius: 10%; }
+      .contacto-cuervos .contact .boton {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        animation: mov 10s infinite linear; }
+  @keyframes mov {
+    0% {
+      background: #02111b;
+      color: #e6fafc; }
+    50% {
+      transform: scale(1.2);
+      transition: 2s;
+      color: #02111b; }
+    100% {
+      background: transparent;
+      color: #02111b; } }
+  .Quien-cuervos {
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Quien-cuervos h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #02111b;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .Quien-cuervos .contenido {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 10px;
+      background: transparent;
+      transition: 2s; }
+      .Quien-cuervos .contenido p {
+        font-size: 0.8em;
+        text-align: none;
+        transition: 2s; }
+        .Quien-cuervos .contenido p b {
+          text-transform: uppercase; }
+        .Quien-cuervos .contenido p a {
+          color: #02111b;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 2s; }
+        .Quien-cuervos .contenido p a:hover {
+          text-decoration: underline;
+          font-size: 1.6em;
+          transition: 1s; }
+    .Quien-cuervos .quien-img {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%; }
+      .Quien-cuervos .quien-img p img {
+        width: 120px;
+        height: 150px;
+        margin-bottom: 10px; }
+      .Quien-cuervos .quien-img p b {
+        padding: 10px;
+        background: transparent;
+        color: #02111b;
+        cursor: pointer;
+        transition: 1s; }
+      .Quien-cuervos .quien-img p b:hover {
+        background: #02111b;
+        color: #e6fafc;
+        transition: 1s; }
+    .Quien-cuervos .form {
+      display: grid;
+      width: 100%; }
+      .Quien-cuervos .form form {
+        display: flex;
+        flex-direction: column; }
+        .Quien-cuervos .form form label {
+          font-weight: bold;
+          font-size: 1.2em; }
+        .Quien-cuervos .form form .input-group {
+          padding-bottom: 10px;
+          width: 100%; }
+          .Quien-cuervos .form form .input-group .form-control, .Quien-cuervos .form form .input-group .contacto-cuervos .contact .tipoproblema, .contacto-cuervos .contact .Quien-cuervos .form form .input-group .tipoproblema {
+            border: 1px solid black; }
+      .Quien-cuervos .form .boton {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #2d232e;
+        bottom: 3em;
+        padding: 10px;
+        width: 100%; }
+  .contendio-cuervos h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #02111b;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .contendio-cuervos .contenido {
+    text-align: center;
+    width: 100%; }
+    .contendio-cuervos .contenido .contenido-mejores {
+      width: 100%; }
+      .contendio-cuervos .contenido .contenido-mejores .mejores {
+        width: 100%; }
+        .contendio-cuervos .contenido .contenido-mejores .mejores button span {
+          opacity: 0;
+          padding: 10px; }
+        .contendio-cuervos .contenido .contenido-mejores .mejores .mejor .video iframe {
+          width: 100%;
+          height: 50vh; }
+    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
+        background-color: #e6fafc;
+        font-size: 0.9em;
+        text-align: justify;
+        transition: 2s;
+        border: none;
+        margin-bottom: 10px;
+        display: flex;
+        width: 50%; }
+        .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
+          width: 100%;
+          height: 100%; } }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
