@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/srtle.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body class="container-fluid GridPadre Inicio-Bg">
     <header class="nav">
@@ -58,7 +58,7 @@
                 <a class="nav-link" href="quienes-somos.html">¿Que es?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Registro</a>
+                <a class="nav-link" href="como-entrar.html">Registro</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contenido.html">Imagenes</a>
@@ -73,29 +73,31 @@
     </header>
     <main class="contacto-cuervos">
       <h1 class="titulo-contacto">Contacto</h1>
-      <form class="container contact">
-        <div class="mb-3 container input">
+      <form class="container contact" id="formulario">
+        <div class="mb-3 container input" id="group__usuario" >
           <label for="exampleFormControlInput1" class="form-label"
             >Nombre de Usuario</label
           >
           <input
             type="text"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="usuario"
             placeholder="Ejemplo"
-            required
+            required max="5"
+            name="nombre"
           />
         </div>
-        <div class="mb-3 container input">
+        <div class="mb-3 container input" id="group__correo">
           <label for="exampleFormControlInput1" class="form-label"
             >Email address</label
           >
           <input
             type="email"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="gmail"
             placeholder="name@example.com"
             required
+            name="correo"
           />
         </div>
         <div class="mb-3 container input">
@@ -109,14 +111,14 @@
       
         </div>
         <div class="mb-3 container input">
-          <label for="exampleFormControlTextarea1" class="form-label"
+          <label for="exampleFormControlTextarea1" class="form-label" 
             >Descripcion de tu problema</label
           >
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="textarea"
             rows="4"
-            style="resize: none"
+            style="resize: none" 
           ></textarea>
         </div>
         <button type="submit" class="boton">Enviar</button>
@@ -135,5 +137,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/validaciones.js"></script>
   </body>
 </html>

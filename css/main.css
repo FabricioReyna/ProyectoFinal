@@ -285,15 +285,15 @@ footer {
     width: 100%;
     display: flex;
     text-align: center;
-    justify-content: center;
-    flex-wrap: wrap; }
+    justify-content: center; }
     .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
       background-color: #e6fafc;
       font-size: 1.3em;
-      text-align: justify;
+      text-align: left;
       transition: 2s;
       border: none;
-      margin: 10px; }
+      margin: 10px;
+      padding: 40px; }
       .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
         height: 100%; }
       .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a {

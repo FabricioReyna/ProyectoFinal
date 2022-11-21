@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/srtle.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body class="container-fluid GridPadre Quien-Bg">
     <header class="nav">
@@ -103,66 +103,25 @@
       </div>
       <div class="contenido-cosplay">
         <h2>Ultimos Fan-arts</h2>
-      <div class="div-contendio-fan">
-        <div class="card mb-3 cards" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/Fan-art.jpg" class="img-fluid rounded-start" alt="Fan-art">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Fan-art @DONTBOTTON</h5>
-                <p class="card-text">Este es mi primer Fan-art de la serie espero que les guste les dejo mis redes para que puedan... <a href="#">Ver mas...</a></p>
-                <p class="card-text"><small class="text-muted">Ultima actualizacion hace 3 min</small></p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="card mb-3 cards" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/Fan-art-2.jpg" class="img-fluid rounded-start" alt="Fan-art-2">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Fan-art @GRIDPROBLEMAS</h5>
-                <p class="card-text">Este es mi primer Fan-art de la serie espero que les guste les dejo mis redes para que puedan... <a href="#">Ver mas...</a></p>
-                <p class="card-text"><small class="text-muted">Ultima actualizacion hace 20 min</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3 cards" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/Fan-art-3.jpg" class="img-fluid rounded-start" alt="Fan-art-3">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Fan-art @DONPUNCH</h5>
-                <p class="card-text">Este es mi primer Fan-art de la serie espero que les guste les dejo mis redes para que puedan... <a href="#">Ver mas...</a></p>
-                <p class="card-text"><small class="text-muted">Ultima actualizacion hace 35 min</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3 cards" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/Fan-art-4.jpg" class="img-fluid rounded-start" alt="Fan-art-4">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Fan-art @ELCONTENIDISTA</h5>
-                <p class="card-text">Este es mi primer Fan-art de la serie espero que les guste les dejo mis redes espero ganar dinero tuve problemas con mi trabajo gracias... <a href="#">Ver mas...</a></p>
-                <p class="card-text"><small class="text-muted">Ultima actualizacion hace 50 min</small></p>
-              </div>
-            </div>
-          </div>
+       <div class=" div-contendio-fan" id="itemsContainer">
       </div>
+    </div>
+
+        <template class="card-body mb-3 cards" style="max-width: 540px;" id="template-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="" class="img-fluid" alt="Fan-art" id="img">
+            </div>
+            <div class="col-md-8">
+              <div class="">
+                <h5 class="card-title"></h5>
+                <p class="card-text " id="card-text2"></p>
+                <p class="card-text"><small class="text-muted" id="text-muted"></small></p>
+              </div>
+            </div>
+          </div>
+        </template>
         
-        </div>
     </article>
 
     </main>
@@ -179,5 +138,8 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/Productos.js"></script>
   </body>
 </html>
+
+
