@@ -368,7 +368,39 @@ footer {
         }
       }
     }
+  
+    }
     .contenido-cosplay {
+      .form{
+        width: auto;
+        border: 1px solid black;
+        display: grid;
+        justify-content: center;
+        .inputs{
+          display: flex;
+          width: 700px;
+          
+        }
+        .input-group-text{
+          background: #02111b;
+          color: #e0ddcf;
+        }
+        .button{
+          display: block;
+          width: 250px;
+          padding: 4px;
+          font-weight: bold;
+          border: none;
+          transition: 2s;
+        }
+        .button:hover{
+          cursor: pointer;
+          background: #02111b;
+          color: #e0ddcf;
+          transition: 2s;
+
+        }
+      }
       .div-contendio-fan {
         width: 100%;
         display: flex;
@@ -403,7 +435,7 @@ footer {
       }
     }
   }
-}
+
 .inicio-footer {
   position: fixed;
   display: flex;

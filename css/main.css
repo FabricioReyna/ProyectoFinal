@@ -281,30 +281,55 @@ footer {
       .contendio-cuervos .contenido .contenido-mejores .mejores .mejor .video iframe {
         width: 60%;
         height: 60vh; }
-  .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan {
-    width: 100%;
+
+.contendio-cuervos .contenido-cosplay .form {
+  width: auto;
+  border: 1px solid black;
+  display: grid;
+  justify-content: center; }
+  .contendio-cuervos .contenido-cosplay .form .inputs {
     display: flex;
-    text-align: center;
-    justify-content: center; }
-    .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards {
-      background-color: #e6fafc;
-      font-size: 1.3em;
-      text-align: left;
-      transition: 2s;
-      border: none;
-      margin: 10px;
-      padding: 40px; }
-      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-img-top {
-        height: 100%;
-        border: 1px solid black; }
-      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a {
-        color: #3b5998;
-        text-decoration: none;
-        font-size: 1.1em; }
-      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a:hover {
-        color: #34e4ea;
-        transform: 2s;
-        text-decoration: underline; }
+    width: 700px; }
+  .contendio-cuervos .contenido-cosplay .form .input-group-text {
+    background: #02111b;
+    color: #e0ddcf; }
+  .contendio-cuervos .contenido-cosplay .form .button {
+    display: block;
+    width: 250px;
+    padding: 4px;
+    font-weight: bold;
+    border: none;
+    transition: 2s; }
+  .contendio-cuervos .contenido-cosplay .form .button:hover {
+    cursor: pointer;
+    background: #02111b;
+    color: #e0ddcf;
+    transition: 2s; }
+
+.contendio-cuervos .contenido-cosplay .div-contendio-fan {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .contendio-cuervos .contenido-cosplay .div-contendio-fan .cards {
+    background-color: #e6fafc;
+    font-size: 1.3em;
+    text-align: left;
+    transition: 2s;
+    border: none;
+    margin: 10px;
+    padding: 40px; }
+    .contendio-cuervos .contenido-cosplay .div-contendio-fan .cards .card-img-top {
+      height: 100%;
+      border: 1px solid black; }
+    .contendio-cuervos .contenido-cosplay .div-contendio-fan .cards .card-text a {
+      color: #3b5998;
+      text-decoration: none;
+      font-size: 1.1em; }
+    .contendio-cuervos .contenido-cosplay .div-contendio-fan .cards .card-text a:hover {
+      color: #34e4ea;
+      transform: 2s;
+      text-decoration: underline; }
 
 .inicio-footer {
   position: fixed;
