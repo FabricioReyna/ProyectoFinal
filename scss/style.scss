@@ -382,8 +382,10 @@ footer {
           border: none;
           margin: 10px;
           padding: 40px;
-          img {
+          .card-img-top {
             height: 100%;
+            border: 1px solid black
+            ;
           }
           .card-text{
             a{

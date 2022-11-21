@@ -294,8 +294,9 @@ footer {
       border: none;
       margin: 10px;
       padding: 40px; }
-      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards img {
-        height: 100%; }
+      .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-img-top {
+        height: 100%;
+        border: 1px solid black; }
       .contendio-cuervos .contenido .contenido-cosplay .div-contendio-fan .cards .card-text a {
         color: #3b5998;
         text-decoration: none;
