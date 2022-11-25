@@ -383,7 +383,6 @@ footer {
     .contenido-cosplay {
       .form{
         width: auto;
-        border: 1px solid black;
         display: grid;
         justify-content: center;
         .inputs{
@@ -395,6 +394,7 @@ footer {
           background: #02111b;
           color: #e0ddcf;
         }
+        
         .button{
           display: block;
           width: 250px;
@@ -413,21 +413,20 @@ footer {
       }
       .div-contendio-fan {
         width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
         .cards {
-          background-color: #e6fafc;
           font-size: 1.3em;
           text-align: left;
           transition: 2s;
           border: none;
-          margin: 10px;
-          padding: 40px;
+          display: flex;
+          padding: 2px;
           .card-img-top {
             height: 100%;
-            border: 1px solid black
-            ;
+            width: 500px;
+            border-radius: 10%;
           }
           .card-text{
             a{
@@ -1135,22 +1134,33 @@ footer {
       .contenido-cosplay {
         .div-contendio-fan {
           width: 100%;
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr;
+  
           .cards {
-            background-color: #e6fafc;
-            font-size: 0.9em;
-            text-align: justify;
+            background: transparent;
+            font-size: 1.3em;
+            text-align: center;
             transition: 2s;
             border: none;
-            margin-bottom: 10px;
-            display: flex;
-            width: 50%;
-            img {
-              width: 100%;
+            display: block;
+            padding: 0px;
+            .card-img-top {
               height: 100%;
+              width: 100%;
+              border-radius: 10%;
+            }
+            .card-text{
+              a{
+                color: #3b5998;
+                text-decoration: none;
+                font-size: 1.1em;
+              }
+              a:hover{
+                color: #34e4ea;
+                transform: 2s;
+                text-decoration: underline;
+              }
             }
           }
         }

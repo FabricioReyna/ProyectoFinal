@@ -39,10 +39,7 @@ form.addEventListener('submit', (e) =>{
 	} else if(password.value.length < 8){
 		warnings += `No Introduciste mas de 8 caracteres  <br>`
 	}
-	if(tipo.value == "-"){
-		warnings +=`Porfavor introduzca un problema valido y haga una descripcion del mismo sino se le considera como invalido`
-		entrar = true
-	}
+	
 	if(entrar){
 		parrafo.innerHTML = warnings
 	}else{
