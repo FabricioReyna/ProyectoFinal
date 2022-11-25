@@ -79,32 +79,34 @@
         </p>
       </div>
       <div class="container form">
+        <b>* Las que se encuentran con este signo son Obligatorias</b>
         <form action="" class="form-style" id="formulario">
-          <label for="iput" class="label-a">Nombre de Usuario</label>
+          <label for="iput" class="label-a">Nombre de Usuario <b>*</b></label>
             <div class="input-group mb-3" id="group__usuario" >
             
                 <span class="input-group-text" id="basic-addon1">#</span>
-                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1" required id="usuario" name="Nombre">
+                <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1"  id="usuario" name="Nombre">
               </div>
-              <label for="CorreoElectronico" class="label-a">Correo Electronico</label>
+              <label for="CorreoElectronico" class="label-a">Correo Electronico <b>*</b></label>
               <div class="input-group mb-3" id="group__correo">
-                <input type="gmail" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2" required id="correo" name="correo">
+                <input type="gmail" class="form-control" placeholder="Correo Electronico" aria-label="Recipient's username" aria-describedby="basic-addon2"  id="correo" name="correo">
                 <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
               </div>
-              <label for="Contraseña" class="label-a">Contraseña</label>
+              <label for="Contraseña" class="label-a">Contraseña <b>*</b></label>
               <div class="input-group mb-3" id="group__password">
-                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" required id="password"
+                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2"  id="password"
                 name="password">
               </div>          
               <label for="PersonajeFavorito" class="label-a">Personaje Favorito</label>
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Personaje Favorito" aria-label="Username" aria-describedby="basic-addon1" required id="PersonajeFavorito">
+                <input type="text" class="form-control" placeholder="Personaje Favorito" aria-label="Username" aria-describedby="basic-addon1"  id="PersonFav">
               </div>
               <label for="Biografia" class="label-a">Biografia</label>
               <div class="input-group">
                 <textarea class="form-control textarea" aria-label="With textarea" style="resize: none;" placeholder="Cuentate algo..." id="Biografia"></textarea>
               </div> 
-              <button class="boton">Registrarse</button>     
+              <button class="boton" type="submit">Registrarse</button>     
+              <p class="warnings" id="warnings"></p>
         </form>
         
       </div>
@@ -122,7 +124,7 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/validaciones.js"></script>
+    <script src="/js/ValdTipo1.js"></script>
 
   </body>
 </html>

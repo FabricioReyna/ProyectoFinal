@@ -102,9 +102,11 @@ footer {
     color: #e6fafc;
   }
   .inicio-img {
+    padding: 10px 0px;
+    background: #e0ddcf;
     iframe {
-      width: 70%;
-      height: 600px;
+      width: 35%;
+      height: 450px;
     }
   }
 }
@@ -316,6 +318,14 @@ footer {
           color: #e6fafc;
           background: #02111b;
         }
+      }
+      .warnings{
+        width: 400px;
+        text-align: center;
+        margin: 10px auto;
+        color: #e0ddcf;
+        font-weight: bold;
+        background: #02111b;
       }
     }
     .boton {
@@ -648,6 +658,13 @@ footer {
         border: 2px solid #2d232e;
         animation: mov 10s infinite linear;
       }
+      .warnings{
+        width: 400px;
+        text-align: center;
+        margin: 10px auto;
+        color: #02111b;
+        font-weight: bold;
+      }
       @keyframes mov {
         0% {
           background: #02111b;
@@ -815,8 +832,10 @@ footer {
       border-radius: 30%;
       text-align: center;
       padding-top: 4px;
-      transform: 1s;
+      transition: all 2s ease-in;
       opacity: 0.6;
+
+    
     }
     i:hover {
       transform: rotate(360deg) scale(1.2);

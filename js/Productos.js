@@ -7,7 +7,7 @@ var et = []
 document.addEventListener('DOMContentLoaded', () => {
     FanARTS();
     if(localStorage.getItem("fan-arts")){
-    FanARTS = JSON.parse(localStorage.getItem("fan-arts")) 
+    FanARTS = JSON.parse(localStorage.setItem("fan-arts")) 
     pintarCards()
     }
 })
@@ -72,6 +72,9 @@ agregar.addEventListener("click", () => {
       </div>
     </div>
   </div>`
-  $("#items").append(card);
-
+  $("#items").appendChild(card);
+  $("#nombre").val("");
+  $("#textarea").val("");
+  $("#imagen").val("");
 })
+console.log(agregar)
